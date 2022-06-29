@@ -8,7 +8,6 @@ import Monster from './Monster';
 const player1 = new Character('Jose');
 const player2 = new Character('Joao');
 const player3 = new Character('Maria');
-
 player1.levelUp();
 player1.levelUp();
 player1.levelUp();
