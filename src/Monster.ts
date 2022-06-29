@@ -13,6 +13,10 @@ export default class Monster implements SimpleFighter {
     return this._lifePoints;
   }
 
+  public set lifePoints(value: number) {
+    this._lifePoints = value;
+  }
+
   public get strength(): number {
     return this._strength;
   }
