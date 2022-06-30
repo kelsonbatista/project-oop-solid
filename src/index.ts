@@ -27,6 +27,8 @@ const runBattles = (battles: Battle[]): void => {
   battles.forEach((battle) => battle.fight());
 };
 
+console.log('App run');
+
 export { player1, player2, player3 };
 export { monster1, monster2 };
 export { pvp };
