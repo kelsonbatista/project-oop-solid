@@ -19,7 +19,7 @@ export default class Character implements Fighter {
     this._race = new Elf(_name, this._dexterity);
     this._archetype = new Mage(_name);
     this._maxLifePoints = this._race.maxLifePoints * 0.5;
-    this._lifePoints = this._race.maxLifePoints;
+    this._lifePoints = this._maxLifePoints;
     this._strength = getRandomInt(1, 10);
     this._defense = getRandomInt(1, 10);
     this._energy = {
@@ -60,8 +60,8 @@ export default class Character implements Fighter {
 
     if (this._maxLifePoints > this._race.maxLifePoints) {
       this._maxLifePoints = this._race.maxLifePoints;
-      this._lifePoints = this._maxLifePoints;
     }
+    this._lifePoints = this._maxLifePoints;
   }
 
   public receiveDamage(attackPoints: number): number {
